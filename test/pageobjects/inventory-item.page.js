@@ -20,17 +20,6 @@ class InventoryPageItem extends Page {
     get TitleBackpackLink(){ return $("=Sauce Labs Backpack")}
 
     
-
-    
-    open () {
-        super.open('');
-        LoginPage.inputUsername.setValue('standard_user');
-        LoginPage.inputPassword.setValue('secret_sauce');
-        LoginPage.submit();
-
-    }
-
-    
 }
 
 module.exports = new InventoryPageItem();

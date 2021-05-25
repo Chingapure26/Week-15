@@ -1,9 +1,10 @@
 const LoginPage = require('../pageobjects/login.page');
 const Items = require('../pageobjects/inventory-item.page');
+const invet= require('../pageobjects/inventory.page');
 
 describe('Browser Load', () => {
     beforeAll("Open browser", () => {
-        Items.open();
+        invet.open();
         Items.TitleBackpackLink.click();
         browser.pause(2000);
         expect(browser).toHaveUrl('https://www.saucedemo.com/inventory-item.html?id=4');

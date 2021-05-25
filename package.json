@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "npx wdio run ./wdio.conf.js --spec inventory-item.js",
+    "test": "npx wdio run ./wdio.conf.js --spec cart.js",
     "start": "node index",
     "dev": "nodemon index"
   },
