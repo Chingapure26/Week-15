@@ -40,7 +40,7 @@ describe('Burger Elements', ()=> {
          browser.pause(2000);
          expect(browser).toHaveUrl('https://saucelabs.com/');
     })
- 
+
      it ("Third Element", ()=>{
          browser.back();
          invent.BurgerBtn.click();
@@ -48,7 +48,7 @@ describe('Burger Elements', ()=> {
          browser.pause(2000);
          expect(browser).toHaveUrl('https://www.saucedemo.com/');
     })
- 
+
     it ("Fourth Element", ()=>{
          invent.open();
          invent.BurgerBtn.click();

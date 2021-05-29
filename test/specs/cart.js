@@ -12,7 +12,7 @@ describe('Browser Load', () => {
         invent.CartLink.click();
         browser.pause(2000);
         expect(browser).toHaveUrl('https://www.saucedemo.com/cart.html');
-                
+
     })
 })
 
@@ -52,7 +52,7 @@ describe("Customer information Page", ()=> {
             expect(check.CancelBtn).toExist();
         })
     })
-    
+
 
     describe("Empty fiels", ()=> {
          it("Empty all fiels", ()=> {
@@ -71,16 +71,16 @@ describe("Customer information Page", ()=> {
              check.LastName.setValue('Ayala');
              check.ContinueBtn.click();
              expect(check.ErrorMess).toHaveText('Error: Postal Code is required');
-        })  
+        })
     })
 
     describe('Buttons', ()=> {
-        it("Cancel information", ()=> {    
+        it("Cancel information", ()=> {
           check.CancelBtn.click();
           expect(browser).toHaveUrl('https://www.saucedemo.com/cart.html');
           browser.back();
       })
-      
+
       it("Continue", ()=> {
           browser.refresh();
           check.FirstName.setValue('Rosario');
@@ -93,7 +93,7 @@ describe("Customer information Page", ()=> {
   })
 
 })
- 
+
 describe("Check Finish order Page", ()=>{
     it("Finish", () =>{
         check2.Finish.click();
@@ -101,13 +101,13 @@ describe("Check Finish order Page", ()=>{
         expect(browser).toHaveUrl('https://www.saucedemo.com/checkout-complete.html');
         browser.back();
     })
-    
-    it("Cancel", ()=> {    
+
+    it("Cancel", ()=> {
         check.CancelBtn.click();
         expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
-        
+
     })
 })
- 
+
 
 

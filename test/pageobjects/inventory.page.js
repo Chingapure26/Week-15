@@ -4,8 +4,8 @@ const Page = require('./page');
 
 
 class InventoryPage extends Page {
-  
-    get BurgerBtn () { return $('#react-burger-menu-btn') } 
+
+    get BurgerBtn () { return $('#react-burger-menu-btn') }
     get ConteinerBurgerBtn(){return $('#menu_button_container ')}
     get AllitemsLink () { return $('#inventory_sidebar_link') }
     get AboutLink () { return $('#about_sidebar_link') }
@@ -28,9 +28,8 @@ class InventoryPage extends Page {
     get TitleBackpackLink(){ return $("=Sauce Labs Backpack")}
     get ImgBackpacklink() {return $('#item_4_img_link')}
     get BackBtn(){ return $('#back-to-products')}
-    
 
-    
+
     open () {
         super.open('');
         LoginPage.inputUsername.setValue('standard_user');
@@ -39,7 +38,7 @@ class InventoryPage extends Page {
 
     }
 
-    
+
 }
 
 module.exports = new InventoryPage();

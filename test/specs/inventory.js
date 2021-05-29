@@ -25,7 +25,7 @@ describe('Cart',()=> {
     expect(browser).toHaveUrl('https://www.saucedemo.com/cart.html');
     browser.back();
     })
-    
+
 })
 
 describe('Sorter', ()=>{
@@ -67,7 +67,7 @@ describe("Test on element (1,1)", ()=> {
     it("Remove to cart", ()=>{
         InventoryPage.RemoveBtn.click();
         browser.pause(2000);
-        expect(InventoryPage.CartBadgeBtn).not.toBeDisplayed();     
+        expect(InventoryPage.CartBadgeBtn).not.toBeDisplayed();
     })
 })
 
@@ -93,7 +93,7 @@ describe("Inventory- item page", ()=> {
     it("Remove to cart", ()=>{
         InventoryPage.RemoveBtn.click();
         browser.pause(2000);
-        expect(InventoryPage.CartBadgeBtn).not.toBeDisplayed();     
+        expect(InventoryPage.CartBadgeBtn).not.toBeDisplayed();
     })
 
     it ("Back Btn", ()=> {

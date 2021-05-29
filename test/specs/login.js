@@ -24,7 +24,7 @@ describe('Empty fields', ()=> {
         loginPage.submit();
         browser.pause(2000);
         expect(loginPage.MessError).toHaveText('Epic sadface: Username is required');
-    }) 
+    })
 
     it("Empty user", () => {
         loginPage.inputUsername.setValue('');
@@ -32,7 +32,7 @@ describe('Empty fields', ()=> {
         loginPage.submit();
         browser.pause(2000);
         expect(loginPage.MessError).toHaveText('Epic sadface: Username is required');
-    }) 
+    })
 
     it("Empty pass", () => {
         browser.refresh();
@@ -55,7 +55,7 @@ describe("Wrong values", () =>{
         loginPage.submit();
         browser.pause(2000);
         expect(loginPage.MessError).toHaveText('Epic sadface: Username and password do not match any user in this service');
-    }) 
+    })
 
     it("Wrong Pass", ()=> {
         loginPage.inputUsername.setValue('problem_user');
@@ -63,7 +63,7 @@ describe("Wrong values", () =>{
         loginPage.submit();
         browser.pause(2000);
         expect(loginPage.MessError).toHaveText('Epic sadface: Username and password do not match any user in this service');
-    }) 
+    })
 
     it("Wrong pass and user", ()=> {
         loginPage.inputUsername.setValue('wrong_user');
@@ -95,7 +95,7 @@ describe( "Special conditions of users", () =>{
             'pageLoad': 4000,
         });
         expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
-    }); 
+    });
 })
 
 describe("Valid pass and User",()=>{
