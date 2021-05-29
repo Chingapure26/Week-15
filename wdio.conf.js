@@ -24,6 +24,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
+        ["./test/specs/E2E.js"],
         ["./test/specs/login.js"],
         ["./test/specs/inventory.js"],
         ["./test/specs/cart.js"],

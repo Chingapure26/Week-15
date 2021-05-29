@@ -8,6 +8,6 @@ class CheckOut2 extends Page {
     get Total (){return $(".summary_total_label")}
     get LastName(){ return $('#last-name')}
     get Finish(){return $("#finish")}
-
+    get backHome(){ return $('#back-to-products')}
 }
 module.exports = new CheckOut2 ();
