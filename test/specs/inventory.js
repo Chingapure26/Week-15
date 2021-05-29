@@ -1,5 +1,5 @@
-const inventoryPage = require('../pageobjects/inventory.page');
 const InventoryPage = require('../pageobjects/inventory.page');
+
 
 
 describe('Browser Load', () => {
@@ -8,6 +8,14 @@ describe('Browser Load', () => {
         browser.pause(2000);
         expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
     });
+
+    it("Imputs Load inventory", ()=> {
+        expect(InventoryPage.CartLink).toExist();
+        expect(InventoryPage.SorterBtn).toExist();
+        expect(InventoryPage.AddbackpacktBtn).toExist();
+        expect(InventoryPage.TitleBackpackLink).toExist();
+        expect(InventoryPage.ImgBackpacklink).toExist();
+    })
 })
 
 describe('Cart',()=> {
@@ -61,9 +69,6 @@ describe("Test on element (1,1)", ()=> {
         browser.pause(2000);
         expect(InventoryPage.CartBadgeBtn).not.toBeDisplayed();     
     })
-    
-
-
 })
 
 describe("Inventory- item page", ()=> {
@@ -75,7 +80,7 @@ describe("Inventory- item page", ()=> {
     })
 
    it("Check Image Link",()=> {
-       inventoryPage.ImgBackpacklink.click();
+       InventoryPage.ImgBackpacklink.click();
        browser.pause(1000);
        expect(browser).toHaveUrl('https://www.saucedemo.com/inventory-item.html?id=4')
    })
