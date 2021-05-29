@@ -22,10 +22,12 @@ class InventoryPage extends Page {
     get TwitLink () { return $('.social_twitter a')}
     get FaceLink () { return $('.social_facebook a')}
     get LinkedLink () { return $('.social_linkedin a')}
+    get Saucedemo(){ return $('.bm-item menu-item a')}
     get CartBadgeBtn () { return $('.shopping_cart_badge') }
     get RemoveBtn () { return $('#remove-sauce-labs-backpack')}
     get TitleBackpackLink(){ return $("=Sauce Labs Backpack")}
     get ImgBackpacklink() {return $('#item_4_img_link')}
+    get BackBtn(){ return $('#back-to-products')}
     
 
     

@@ -1,6 +1,7 @@
 const loginPage = require('../pageobjects/login.page');
 
 
+
 describe('Browser Load', () => {
     beforeAll("Open browser", () => {
         loginPage.open();
@@ -110,5 +111,6 @@ describe("Valid pass and User",()=>{
     loginPage.submit();
     browser.pause(2000);
     expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
+    browser.pause(3000);
     })
 })
