@@ -21,7 +21,7 @@ This is the last proyect of the course taught by staff RR, this include the conc
 ## Thanks!  🎁
 
 * All staff of RR 
-* To my tutor, specially Rodrigo and Bruno. 
-* To my course classmates specially Micaela, Sol and Maru.
+* To my tutors, specially Rodrigo and Bruno. 
+* To my course classmates specially Martina, Sol and Maru.
 
 
